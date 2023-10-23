@@ -11,6 +11,7 @@
 }
 
 body {
+    height: 100%;
     background-color: var(--background-color);
 }
 
@@ -25,4 +26,8 @@ li {
 .wrapper {
     max-width: 1245px;
     margin: 0 auto;
+}
+
+main {
+    height: calc(100vh - 590px);
 }
