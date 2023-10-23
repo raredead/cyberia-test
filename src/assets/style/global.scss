@@ -1,0 +1,28 @@
+// Переменные
+@import './variable.scss';
+
+// Локальные шрифты
+@import './fonts.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1245px;
+    margin: 0 auto;
+}

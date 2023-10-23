@@ -1,0 +1,37 @@
+// Open Sans
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+        url('../../../public/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../../../public/fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'),
+        url('../../../public/fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../../../public/fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+// Rubik
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Medium'), local('Rubik-Medium'),
+        url('../../../public/fonts/Rubik-Medium.woff2') format('woff2'),
+        url('../../../public/fonts/Rubik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Light'), local('Rubik-Light'),
+        url('../../../public/fonts/Rubik-Light.woff2') format('woff2'),
+        url('../../../public/fonts/Rubik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
