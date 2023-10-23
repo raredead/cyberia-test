@@ -1,5 +1,6 @@
 <script setup>
 import HeaderLogo from '@/assets/img/HeaderLogo.vue'
+import BurgerMenu from '../BurgerMenu/BurgerMenu.vue';
 import { ref } from 'vue'
 
 const links = ref([
@@ -25,6 +26,7 @@ const links = ref([
                 {{ link.name }}
             </router-link>
         </nav>
+        <burger-menu />
     </header>
 </template>
 
@@ -34,11 +36,19 @@ const links = ref([
     align-items: center;
     justify-content: space-between;
     height: 165px;
+
+    @media (max-width: 980px) {
+        height: 100px;
+    }
 }
 
 .nav-header{
     display: flex;
     gap: 93px;
+
+    @media (max-width: 980px) {
+        display: none;
+    }
 
     &__item{
         font-family: 'Rubik';

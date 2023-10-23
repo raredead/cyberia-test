@@ -1,7 +1,7 @@
 <script setup>
 import AppHeader from './components/layout/AppHeader.vue';
 import BreadCrumbs from './components/layout/BreadCrumbs.vue'
-import AppFooter from './components/layout/AppFooter.vue';
+import AppFooter from './components/layout/Footer/AppFooter.vue';
 </script>
 
 <template>
