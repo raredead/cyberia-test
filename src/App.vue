@@ -1,6 +1,7 @@
 <script setup>
 import AppHeader from './components/layout/AppHeader.vue';
 import BreadCrumbs from './components/layout/BreadCrumbs.vue'
+import AppFooter from './components/layout/AppFooter.vue';
 </script>
 
 <template>
@@ -12,5 +13,6 @@ import BreadCrumbs from './components/layout/BreadCrumbs.vue'
         <main>
             <router-view />
         </main>
+        <app-footer />
     </div>
 </template>

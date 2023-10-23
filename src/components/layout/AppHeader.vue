@@ -1,4 +1,5 @@
 <script setup>
+import HeaderLogo from '@/assets/img/HeaderLogo.vue'
 import { ref } from 'vue'
 
 const links = ref([
@@ -13,7 +14,7 @@ const links = ref([
 <template>
     <header class="header">
         <div class="header__logo">
-            <img src="@/assets/img/logo.svg" alt="Logo">
+            <header-logo />
         </div>
         <nav class="header__nav nav-header">
             <router-link
@@ -27,7 +28,7 @@ const links = ref([
     </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .header{
     display: flex;
     align-items: center;
