@@ -44,4 +44,4 @@ const toggleMenu = () => {
     </div>
 </template>
 
-<style lang="scss" scoped src="./BurderMenu.scss" />
+<style lang="scss" scoped src="@/assets/style/ComponentStyle/BurgerMenu.scss" />
