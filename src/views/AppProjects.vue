@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue'
 import { useProjectsStore } from '../stores/ProjectsStore';
 
 import FilterButton from '../components/UI/FilterButton.vue';
+import AppLoader from '../components/Loader/AppLoader.vue';
 import ProjectItem from '../components/ProjectItem.vue';
 
 const projectsStore = useProjectsStore()
@@ -25,6 +26,7 @@ onMounted(() => {
             name="Frontend"
             />
         </div>
+        <app-loader v-if="projectsStore.loader"/>
         <div class="projects__elements">
             <project-item 
             v-for="project in projectsStore.projects"
@@ -40,6 +42,16 @@ onMounted(() => {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
+
+        @media (max-width: 980px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        @media (max-width: 500px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
     }
 }
 </style>
