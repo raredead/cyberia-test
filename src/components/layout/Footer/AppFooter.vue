@@ -37,4 +37,4 @@ import FooterLogo from '@/assets/img/FooterLogo.vue';
     </footer>
 </template>
 
-<style lang="scss" scoped src="./AppFooter.scss"/>
+<style lang="scss" scoped src="@/assets/style/ComponentStyle/AppFooter.scss"/>
